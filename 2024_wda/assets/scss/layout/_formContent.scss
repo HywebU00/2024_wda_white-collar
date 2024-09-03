@@ -1,0 +1,405 @@
+.form-content {
+  .card-title {
+    font-size: 1.6em;
+    margin-bottom: 0;
+    background-color: darken(#2fb4bd, 15%);
+    color: #fff;
+
+    // $default-color
+    h3 {
+      // display: inline-block;
+      // background-color: $default-color;
+      // padding: 0.3em 1em ;
+      color: #fff;
+      // margin-bottom: 0;
+      // &::after {
+      // 	content: '';
+      // 	width: 150px;
+      // 	height: 5px;
+      // 	background: $primary;
+      // 	position: absolute;
+      //   left:calc(50% - 75px);
+      // 	top:2em;
+      // }
+    }
+
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .list-result {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .btn {
+    width: 200px;
+    font-size: 1.3em;
+    padding: 0.7em;
+    margin: 0 0.5em;
+  }
+
+  .card-search {
+    background: linear-gradient(189deg, rgba(255, 255, 255, 0.85) 17.9%, rgba(220, 218, 231, 0.85) 100%) !important;
+  }
+  .card-profile {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    p {
+      font-size: 1.25em;
+      font-weight: 400;
+    }
+  }
+  .text-primary-deep {
+    color: #3e3e8e;
+  }
+
+  .nav-item .nav-link {
+    font-size: 16px;
+    border: 1px solid $default-color;
+    margin-right: 0.5em;
+    transition: all 0.5s;
+    color: $default-color;
+    border-radius: 0.6em;
+    &:hover {
+      background: #e4f1f2;
+    }
+  }
+
+  .nav-item .nav-link.active {
+    background: $default-color;
+    transition: all 0.5s;
+    color: #fff;
+  }
+
+  .form-control {
+    border: 1px solid #d8d7e4;
+  }
+
+  .form-control.files-area {
+    min-height: 150px;
+    border: dashed 2px #d8d7e4;
+    cursor: pointer;
+    background: no-repeat center center url(../img/wda_img/fancy_upload.png);
+    opacity: 0.5;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.card-form {
+  //background-color: #f9fcfc !important;
+  margin: 5px;
+  box-shadow: -2px 1px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  margin-bottom: 2em;
+  .btn.btn-phoneNum {
+    font-size: 14px !important;
+    // border-radius: 0.25em;
+    height: 45px;
+  }
+
+  .form-text-size {
+    font-size: 14px;
+  }
+
+  .textarea-register {
+    min-height: 150px;
+
+    &::placeholder {
+      color: darken($default-color, 100%);
+      font-size: 1.2em;
+      line-height: 1.5em;
+      resize: none;
+    }
+  }
+
+  // .card-body {
+  // 	position: relative;
+  // &::after{
+  // 	position: absolute;
+  // 	content: '';
+  // 	width: 94%;
+  // 	height: 2px;
+  //     left: 3%;
+  // 	background: #a9cdd0;
+  // }
+  // }
+  .table-title-style {
+    font-size: 16px;
+    color: $default-color;
+    background: $light-bg;
+  }
+}
+
+.page-title {
+  span {
+    font-size: 2.2em;
+    color: $default-color;
+  }
+}
+
+.title-style {
+  font-size: 1.9em;
+  // color: darken(  #2fb4bd, 15%);
+  color: $default-color;
+  position: relative;
+  padding: 0 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 3.5px solid var(--primary-bg-color);
+  // &::before{
+  // 	content: '';
+  // 	height: 40px;
+  // 	width: 10px;
+  // 	background: #000;
+  // 	position: absolute;
+  // }
+  // font-size: 1.6em;
+  // background-color:darken(  #2fb4bd, 15%);
+  // color: #fff;
+  // padding: 0.5em 3em;
+  // margin-left: 1em;
+  // border-radius: 0.25em;
+  // position: relative;
+  // &::before{
+  // 	content: '';
+  // 	position: absolute;
+  // 	height: 1px;
+  // 	width: 30px;
+  // 	background: #fff;
+  // 	top: 23px;
+  // 	left: 20px;
+  // }
+  // &::after{
+  // 	content: '';
+  // 	position: absolute;
+  // 	height: 1px;
+  // 	width: 30px;
+  // 	background: #fff;
+  // 	top: 23px;
+  // 	right: 20px;
+  // }
+}
+
+.form-title {
+  margin-left: 1.5em;
+  font-size: 1.8em;
+}
+
+.btn.btn-danger {
+  background: linear-gradient(276deg, rgba(222, 90, 72, 1) 0%, rgba(245, 122, 115, 0.9) 100%) !important;
+}
+
+.btn.btn-info {
+  border-radius: 8px;
+  background: linear-gradient(276deg, #4b4082 0%, #716aa0 100%) !important;
+}
+
+.btn-result {
+  color: $default-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $default-color !important;
+  }
+}
+
+.btn.btn-style-sm {
+  width: 150px;
+  font-size: 1.2em;
+}
+
+.table-a-style {
+  text-decoration: underline;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #2fb4bd;
+    text-decoration: underline;
+  }
+}
+
+.bg-primary-light {
+  background-color: #e4f1f2;
+}
+
+// 檔案下載
+.file_download {
+  width: 100%;
+  margin: 0 auto 2em;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0.5em 0 0.5em 0em;
+    border-bottom: solid 1px #eee;
+    //   &:before{
+    // 	content:'·';
+    // 	font-size: 2em;
+    // 	font-weight: bold;
+    // 	width: 1em;
+    // 	height: 1em;
+    // 	position: absolute;
+    // 	top:.32em;
+    // 	left:.1em;
+    // 	color:#666;
+    //   }
+
+    .file_name {
+      line-height: 1.8em;
+      margin: 0.2em 0.5em 0.2em 0;
+      color: #222;
+      ~ span {
+        flex: 0 0 auto;
+        margin: 0.5em 0.2em;
+        font-size: 0.875em;
+        line-height: 1.5em;
+        vertical-align: middle;
+        color: #666;
+        a.file_icon {
+          color: #fff;
+          display: inline-block;
+          margin-right: 8px;
+        }
+      }
+    }
+    $fileType: doc, docx, odt, xls, xlsx, csv, ods, ppt, pptx, odp, zip, txt, mov, mp3, jpg, wmv, mp4, pdf, other;
+    @each $fileType in $fileType {
+      span.file_#{$fileType} {
+        .file_icon {
+          color: #fff;
+          font-weight: bold;
+          padding: 0.2em 0.8em;
+          margin-right: 0.5em;
+          border-radius: 3px;
+          &:hover,
+          &:focus {
+            color: #fff;
+          }
+        }
+      }
+    }
+    span {
+      line-height: 2.5em;
+      &.file_doc,
+      &.file_docx,
+      &.file_odt {
+        a {
+          background: #275cb7;
+          &:hover,
+          &:focus {
+            background: darken(#275cb7, 5%);
+          }
+        }
+      }
+      &.file_xls,
+      &.file_xlsx,
+      &.file_csv,
+      &.file_ods {
+        a {
+          background: #387947;
+          &:hover,
+          &:focus {
+            background: darken(#387947, 5%);
+          }
+        }
+      }
+      &.file_ppt,
+      &.file_pptx,
+      &.file_odp,
+      &.file_pdf {
+        a {
+          background: #c55a3b;
+          &:hover,
+          &:focus {
+            background: darken(#c55a3b, 5%);
+          }
+        }
+      }
+      &.file_pdf {
+        a {
+          background: #c00;
+          &:hover,
+          &:focus {
+            background: darken(#c00, 5%);
+          }
+        }
+      }
+      &.file_zip {
+        a {
+          background: #eb712e;
+          &:hover,
+          &:focus {
+            background: darken(#eb712e, 5%);
+          }
+        }
+      }
+      &.file_txt,
+      &.file_other {
+        a {
+          background: #555;
+          &:hover,
+          &:focus {
+            background: darken(#555, 5%);
+          }
+        }
+      }
+      &.file_mov {
+        a {
+          background: #009999;
+          &:hover,
+          &:focus {
+            background: darken(#009999, 5%);
+          }
+        }
+      }
+      &.file_mp3,
+      &.file_mp4 {
+        a {
+          background: #088ecc;
+          &:hover,
+          &:focus {
+            background: darken(#088ecc, 5%);
+          }
+        }
+      }
+      &.file_jpg {
+        a {
+          background: #6c29a4;
+          &:hover,
+          &:focus {
+            background: darken(#6c29a4, 5%);
+          }
+        }
+      }
+      &.file_wmv {
+        a {
+          background: #430a1f;
+          &:hover,
+          &:focus {
+            background: darken(#430a1f, 5%);
+          }
+        }
+      }
+      .btn-dele {
+        background: unset !important;
+        cursor: pointer;
+        margin: 0 1em 0 0.5em;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+          color: $default-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <meta name="description" content="Nowa -  Admin Panel HTML Dashboard Template" />
+  <meta name="author" content="Spruko Technologies Private Limited" />
+  <meta name="keywords"
+    content="sales dashboard, admin dashboard, bootstrap 4 admin template, html admin template, admin panel design, admin panel design, bootstrap 4 dashboard, admin panel template, html dashboard template, bootstrap admin panel, sales dashboard design, best sales dashboards, sales performance dashboard, html5 template, dashboard template" />
+
+  <!-- Title -->
+  <title>勞動力發展署外國人查詢下載專區系統</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.ico" type="image/x-icon" />
+
+  <!-- Icons css -->
+  <link href="../assets/css/icons.css" rel="stylesheet" />
+
+  <!--  bootstrap css-->
+  <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!--- Internal Select2 css-->
+  <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+
+  <!---Internal Fileupload css-->
+  <link href="../assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css" />
+
+  <!---Internal Fancy uploader css-->
+  <link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+
+  <!--  Right-sidemenu css -->
+  <link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet" />
+
+  <!-- P-scroll bar css-->
+  <link href="../assets/plugins/perfect-scrollbar/p-scrollbar.css" rel="stylesheet" />
+
+  <!--- Style css --->
+  <link href="../assets/css/style.css" rel="stylesheet" />
+  <link href="../assets/css/style-dark.css" rel="stylesheet" />
+  <link href="../assets/css/style-transparent.css" rel="stylesheet" />
+
+  <!---Skinmodes css-->
+  <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+
+  <!--- Animations css-->
+  <link href="../assets/css/animate.css" rel="stylesheet" />
+</head>
+
+<body class="horizontal ltr main-body app sidebar-mini">
+  <!-- Loader -->
+  <div id="global-loader">
+    <img src="../assets/img/loader.svg" class="loader-img" alt="Loader" />
+  </div>
+  <!-- /Loader -->
+
+  <!-- Page -->
+  <div class="page">
+    <div>
+      <!-- main-header -->
+      <div class="main-header side-header sticky nav nav-item">
+        <div class="main-container container-fluid">
+          <div class="main-header-left">
+            <div class="responsive-logo">
+              <a href="#" class="header-logo">
+                <img src="../assets/img/brand/logo.png" class="mobile-logo logo-1" alt="logo" />
+              </a>
+              <h1>外國人查詢下載專區</h1>
+            </div>
+            <div class="app-sidebar__toggle" data-bs-toggle="sidebar">
+              <a class="open-toggle" href="javascript:void(0);"><i class="header-icon fe fe-align-left"></i></a>
+              <a class="close-toggle" href="javascript:void(0);"><i class="header-icon fe fe-x"></i></a>
+            </div>
+            <div class="logo-horizontal p-3">
+              <a href="index.html" class="header-logo">
+                <img src="../assets/img/brand/logo.png" class="mobile-logo logo-1" alt="logo" />
+              </a>
+            </div>
+            <h1>外國人查詢下載專區</h1>
+          </div>
+          <div class="main-header-right d-block">
+            <div class="d-flex align-items-center mt-4 mt-sm-0">
+              <div class="form-group form-language me-2">
+                <div class="row row-sm">
+                  <div class="col d-flex justify-content-center align-items-center">
+                    <label class="main-content-label mb-0">語言切換</label>
+                    <div class="row row-sm">
+                      <div class="col">
+                        <select class="form-control select2-no-search">
+                          <option selected disabled label="語言切換">
+                            語言切換
+                          </option>
+                          <option value="中文">中文</option>
+                          <option value="English">English</option>
+                          <option value="Tagalog">Tagalog</option>
+                          <option value="Indonesia">Indonesia</option>
+                          <option value="Việt Nam">Việt Nam</option>
+                          <option value="ประเทศไทย">ประเทศไทย</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn btn-primary btn-lg btn-usebook" type="button">
+                <a href="#"> 操作手冊</a>
+              </button>
+              <button class="btn btn btn-primary btn-lg btn-video" type="button">
+                <a href="#">說明影片</a>
+              </button>
+            </div>
+            <div class="mb-0 navbar navbar-expand-lg navbar-nav-right responsive-navbar navbar-dark p-0">
+              <div class="collapse navbar-collapse navbar-collapse-info" id="navbarSupportedContent-4">
+                <ul class="nav nav-item header-icons navbar-nav-right ms-auto d-block d-md-flex">
+                  <li class="nav nav-item nav-link pb-0 pb-lg-3 pt-2 ps-lg-2">
+                    <ul class="user-info mt-2 mb-3 mb-lg-0">
+                      <li><span class="me-2">朱Ｏ伶</span></li>
+                      <li>|<a class="ms-2" href="">登出</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /main-header -->
+
+      <!-- main-sidebar -->
+      <div class="sticky main-header-border">
+        <aside class="app-sidebar">
+          <div class="main-sidebar-header active">
+            <a class="header-logo active" href="#">
+              <img src="../assets/img/brand/logo.png" class="main-logo desktop-logo" alt="logo" />
+              <img src="../assets/img/brand/favicon.png" class="main-logo mobile-logo" alt="logo" />
+            </a>
+          </div>
+          <div class="main-sidemenu d-flex justify-content-center">
+            <div class="slide-left disabled" id="slide-left">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#0D455C" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+              </svg>
+            </div>
+            <ul class="side-menu">
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">100_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">200_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">300_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">400_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">500_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">600_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">700_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mt-2">
+                <div class="form-group form-language form-mobile-language">
+                  <div class="row row-sm">
+                    <div class="col d-flex justify-content-center align-items-center">
+                      <label class="main-content-label mb-0">語言切換</label>
+                      <div class="row row-sm">
+                        <div class="col">
+                          <select class="form-control select2-no-search">
+                            <option selected disabled label="語言切換">
+                              語言切換
+                            </option>
+                            <option value="中文">中文</option>
+                            <option value="English">English</option>
+                            <option value="Tagalog">Tagalog</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Việt Nam">Việt Nam</option>
+                            <option value="ประเทศไทย">ประเทศไทย</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="mt-4 d-md-none d-block text-center user-list pb-2 border-bottom">
+                <span> <a href="#" class="px-2">操作手冊</a></span>
+                <span> <a class="px-2" href="#">說明影片</a></span>
+              </li>
+              <li class="d-md-none d-block nav-link pb-0 pb-lg-3 pt-3 ps-lg-2">
+                <span class="mt-2 ps-0 align-items-center">
+                  <span class="text-center mb-2 d-block"><span class="user-name">朱Ｏ伶</span></span>
+                  <span class="d-flex justify-content-center"><a class="px-5 btn btn-outline-primary btn-block mx-2"
+                      href="#">登出</a></span>
+                </span>
+              </li>
+            </ul>
+            <div class="slide-right" id="slide-right">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#0D455C" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+              </svg>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <!-- main-sidebar -->
+    </div>
+
+    <!-- main-content -->
+    <div class="main-content form-content">
+      <!-- container -->
+      <div class="main-container container-fluid">
+        <!-- breadcrumb -->
+        <div class="breadcrumb-header justify-content-between mb-4">
+          <div class="left-content page-title">
+            <span class="main-content-title mg-b-0 mg-b-lg-1">填寫表單</span>
+          </div>
+          <div class="justify-content-center mt-2">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="javascript:void(0);">首頁</a>
+              </li>
+              <li class="breadcrumb-item">1.製造業(屠宰業)</li>
+              <li class="breadcrumb-item active" aria-current="page">
+                c1062_至公立就業服務機構接續
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- /breadcrumb -->
+
+        <!-- Tab btnlist -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active px-3 py-2" id="pills-home-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login" aria-selected="true">
+              申請書登入資料
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link  px-3 py-2" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">
+              應備文件上傳
+            </button>
+          </li>
+        </ul>
+        <!-- Tab btnlist closed -->
+
+        <!-- Tab container -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Tab login container -->
+          <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+            <!-- row -->
+            <div class="row content2">
+              <div class="col-lg-12 col-md-12">
+                <!-- 表單選擇 start -->
+                <div class="card card-form card-style">
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">表單選擇</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-12 table-responsive">
+                        <div class="p-2">
+                          <table class="table text-nowrap table-style">
+                            <tbody>
+                              <tr>
+                                <th class="table-title-style text-end col-2" scope="row ">
+                                  案件編號
+                                </th>
+                                <td colspan="2">
+                                  1100001914-00
+                                  <span class="text-danger">存檔後系統自動產生</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="table-title-style text-end col-2">
+                                  案件收文號
+                                </th>
+                                <td colspan="2" class="text-danger">
+                                  資料送審後，應確認系統已給予一組收文號，始完成送件
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row" class="table-title-style text-end col-2">
+                                  工作類別
+                                </th>
+                                <td colspan="2">
+                                  10製造工作(屠宰工作)-不分類
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 表單選擇 end -->
+                <div class="card card-form card-style">
+                  <!-- 雇主基本資料 start -->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">雇主基本資料</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>營利事業統一編號</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="originalnum" placeholder="營利事業統一編號" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>公司負責人</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="originalnum" placeholder="公司負責人" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>雇主名稱</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="雇主名稱" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">身分證字號</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="身分證字號" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>勞保證號</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="勞保證號" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">工廠登記編號
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="工廠登記編號" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">原雇主統一編號
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="原雇主統一編號" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">原雇主名稱
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="原雇主名稱" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-2 mb-0 mb-md-2">
+                              <label for="worktype" class="form-label text-lg-end"><span class="text-danger">* </span>
+                                公司地址</label>
+                            </div>
+                            <div class="col-12 col-lg-10">
+                              <div class="row mb-2">
+                                <div class="col-12 col-lg-3 mb-3 md-lg-0 d-flex">
+                                  <label for="applyname"
+                                    class="form-label text-nowrap me-2 fw-normal form-text-size">郵遞區號</label>
+                                  <input type="text" class="form-control" id="" placeholder="郵遞區號" />
+                                </div>
+                                <div class="col-12 col-lg-4 mb-3 md-lg-0 d-flex">
+                                  <label for="" class="form-label text-nowrap me-2 fw-normal form-text-size">縣市</label>
+                                  <select name="" class="form-control form-select me-2" data-bs-placeholder="文件回覆方式">
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="" selected disabled>
+                                      請選擇
+                                    </option>
+                                  </select>
+                                  <select name="" class="form-control form-select" data-bs-placeholder="文件回覆方式">
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="" selected disabled>
+                                      請選擇
+                                    </option>
+                                  </select>
+                                </div>
+                                <div class="col-12 col-lg-5 mb-3 md-lg-0 d-flex">
+                                  <label for="" class="form-label text-nowrap me-2 fw-normal form-text-size">
+                                    路(街)名地址</label>
+                                  <input type="text" class="form-control" id="" placeholder="路(街)名地址" />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col d-flex">
+                                  <label for="applyname"
+                                    class="form-label text-nowrap me-2 fw-normal form-text-size">詳細地址</label>
+                                  <input type="text" class="form-control" id="" placeholder="詳細地址" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-2 mb-0 mb-md-2">
+                              <label for="worktype" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>核准工作地址</label>
+                            </div>
+                            <div class="col-12 col-lg-10">
+                              <div class="row mb-2">
+                                <div class="col-12 col-lg-3 mb-3 md-lg-0 d-flex">
+                                  <label for="applyname"
+                                    class="form-label text-nowrap me-2 fw-normal form-text-size">郵遞區號</label>
+                                  <input type="text" class="form-control" id="" placeholder="郵遞區號" />
+                                </div>
+                                <div class="col-12 col-lg-4 mb-3 md-lg-0 d-flex">
+                                  <label for="" class="form-label text-nowrap me-2 fw-normal form-text-size">縣市</label>
+                                  <select name="" class="form-control form-select me-2" data-bs-placeholder="文件回覆方式">
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="" selected disabled>
+                                      請選擇
+                                    </option>
+                                  </select>
+                                  <select name="" class="form-control form-select" data-bs-placeholder="文件回覆方式">
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="">文件回覆方式</option>
+                                    <option value="" selected disabled>
+                                      請選擇
+                                    </option>
+                                  </select>
+                                </div>
+                                <div class="col-12 col-lg-5 mb-3 md-lg-0 d-flex">
+                                  <label for="" class="form-label text-nowrap me-2 fw-normal form-text-size">
+                                    路(街)名地址</label>
+                                  <input type="text" class="form-control" id="" placeholder="路(街)名地址" />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col d-flex">
+                                  <label for="applyname"
+                                    class="form-label text-nowrap me-2 fw-normal form-text-size">詳細地址</label>
+                                  <input type="text" class="form-control" id="" placeholder="詳細地址" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 雇主基本資料 end -->
+                </div>
+                <div class="card card-form card-style">
+                  <!-- 國籍說明 start -->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">雇主聯絡資訊</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-md-2">
+                        <div for="reply" class="form-label text-lg-end">
+                          <span class="text-danger">* </span>市內電話
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="row">
+                          <div class="col-12 d-flex align-items-center">
+                            <label class="rdiobox d-flex"><input name="rdio" class="me-2" type="radio" />
+                              <span class="form-text-size me-2">有</span></label>
+                            <label class="rdiobox d-flex"><input name="rdio" class="me-2" type="radio" />
+                              <span class="form-text-size me-2">無</span></label>
+                            <input class="form-control" type="text" />
+                          </div>
+                          <div class="col-12 mt-1 mb-4">
+                            <span class="text-primary-deep">(不得與委任之私立就業服務機構聯絡電話相同)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div for="reply" class="form-label text-lg-end">
+                          <span class="text-danger">* </span>行動電話
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="row">
+                          <div class="col-12 d-flex align-items-center">
+                            <label class="rdiobox d-flex"><input name="rdio" class="me-2" type="radio" />
+                              <span class="form-text-size me-2">有</span></label>
+                            <label class="rdiobox d-flex"><input name="rdio" class="me-2" type="radio" />
+                              <span class="form-text-size me-2">無</span></label>
+                            <input class="form-control" type="text" />
+                          </div>
+                          <div class="col-12 mt-1 mb-4">
+                            <span class="text-primary-deep">(不得與委任之私立就業服務機構聯絡電話相同)</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <div for="reply" class="form-label text-lg-end">
+                          <span class="text-danger">* </span>電子郵件
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="row">
+                          <div class="col-12 d-flex align-items-center">
+                            <label class="rdiobox d-flex"><input name="rdio" class="me-2" type="radio" />
+                              <span class="form-text-size me-2">有</span></label>
+                            <label class="rdiobox d-flex"><input name="rdio" class="me-2" type="radio" />
+                              <span class="form-text-size me-2">無</span></label>
+                            <input class="form-control" type="text" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3">
+                        <div class="alert alert-danger">
+                          ※電話號碼長度最多為10碼，最低為9碼，行動電話為09開頭共10碼，市話含區碼為02、03、04、05、06、07、08開頭共9碼或10碼，無01開頭電話號碼，填入09開頭必為10碼，仲介電話可為9碼或10碼；電話後7碼不得為同一數字；電話後7碼不得為7654321或1234567。
+                          ※以上三項聯絡資訊，每項雇主均須擇一勾選「有」或「無」，未勾選者，將退請補正確認，若勾選「有」，請確實填寫。另聯絡資訊將作為本機關即時聯繫說明申請案件審查情形及後續聘僱管理注意事項之用，以利縮短案件審查時間，與保障雇主聘僱外國人之權益！
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 國籍說明 end -->
+                </div>
+                <!-- 
+接續聘僱外國人名冊 start -->
+                <div class="card card-form card-style">
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">
+                      接續聘僱外國人名冊</h3>
+                  </div>
+                  <div class="text-danger ms-5">欲編輯名冊內容，請於該欄位點兩下</div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-12">
+                        <div class="alert alert-light">
+                          <div class="row">
+                            <div class="col-lg-9">
+                              <p class="form-label text-register">
+                                檔案格式TXT(UTF-8格式)，檔案內容說明：
+                                新任國籍,新任護照號碼,新任入國引進許可或遞補招募許可文號,新任接續聘僱通報證明序號,前任國籍,前任護照號碼,
+                                原雇主廢止聘僱許可或不予許可函文號,原雇主廢止聘僱許可或不予許可函發文日期
+                                範例參考：030,12345678,1234567890,12345B7890,030,12234311,1234567890,1050101　　(若無資料，請填空白)
+                              </p>
+                            </div>
+                            <div class="col-lg-3 d-flex align-items-end justify-content-end pe-0">
+                              <button type="button" class="btn 
+                              btn-primary  btn-result btn-style btn-style-white  btn-style-sm">
+                                名冊匯入
+                              </button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="alert alert-light">
+                          <div class="row">
+                            <div class="col-lg-9">
+                              <div class="">
+                                <textarea class="form-control textarea-register"
+                                  placeholder="檔案格式TXT(UTF-8格式)，檔案內容說明： 新任國籍,新任護照號碼,新任入國引進許可或遞補招募許可文號,新任接續聘僱通報證明序號,前任國籍,前任護照號碼, 原雇主廢止聘僱許可或不予許可函文號,原雇主廢止聘僱許可或不予許可函發文日期 範例參考：030,12345678,1234567890,12345B7890,030,12234311,1234567890,1050101　　(若無資料，請填空白)"
+                                  id="floatingTextarea2" style="height: 100px"></textarea>
+
+                              </div>
+                            </div>
+                            <div class="col-lg-3 d-flex align-items-end justify-content-end mt-2 mt-lg-0 pe-0">
+                              <button type="button" class="btn 
+                              btn-primary  btn-result btn-style btn-style-white btn-style-sm">
+                                名冊匯入
+                              </button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-12 d-flex mb-5 align-items-end justify-content-end">
+                        <button type="button" class="btn 
+                        btn-primary btn-style btn-style-sm">
+                          名單暫存
+                        </button>
+                      </div>
+
+
+                      <div class="col-lg-12 table-responsive mb-3">
+                        <div class="p-2">
+                          <table class="table  text-nowrap table-style">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">序號</th>
+                                <th scope="col">新任國籍代碼</th>
+                                <th scope="col">新任護照號碼
+                                </th>
+                                <th scope="col">新任入國引進許可或遞補招募許可文號
+                                </th>
+                                <th scope="col">新任接續聘僱通報證明書序號
+                                </th>
+                                <th scope="col">前任國籍代碼
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="">
+                                  <label class="ckbox mb-1"><input type="checkbox"><span></span></label>
+                                </td>
+                                <td colspan="">
+                                  1
+                                </td>
+                                <td colspan="">
+                                  009
+                                </td>
+                                <td colspan="">
+                                  AA123456
+                                </td>
+                                <td colspan="">
+                                  1091234567
+                                </td>
+                                <td colspan="">
+                                  190BBB
+                                </td>
+                                <td colspan="">
+                                  024
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="">
+                                  <label class="ckbox mb-1"><input type="checkbox"><span></span></label>
+                                </td>
+                                <td colspan="">
+                                  2
+                                </td>
+                                <td colspan="">
+                                  009
+                                </td>
+                                <td colspan="">
+                                  AA123456
+                                </td>
+                                <td colspan="">
+                                  1091234567
+                                </td>
+                                <td colspan="">
+                                  190BBB
+                                </td>
+                                <td colspan="">
+                                  024
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-lg-12  d-flex justify-content-end ">
+                        <button type="button" class="btn
+                        btn-primary btn-style btn-style-sm ">
+                          新增名冊
+                        </button>
+                        <button type="button" class="btn 
+                        btn-danger btn-style btn-style-sm ">
+                          刪除名冊
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 表
+接續聘僱外國人名冊 end -->
+                <div class="card card-form card-style">
+                  <!-- 接續日期 start-->
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-6">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label text-lg-end">
+                                <span class="text-danger">* </span>
+                                接續日期
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="date" class="form-control" id="originalnum" placeholder="" />
+                              <div class="mt-1">
+                                <span class="text-primary-deep">(不得與委任之私立就業服務機構聯絡電話相同)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label text-lg-end">接續聘雇外國人名冊</label>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                              <span class="form-text-size me-2">共</span>
+                              <input type="text" class="form-control" id="originalnum" placeholder="" />
+                              <span class="form-text-size ms-2">人</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 接續日期 end-->
+                </div>
+                <div class="card card-form card-style">
+                  <!-- 持許可函 start -->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">持許可函</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-6">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4 mb-0 mb-md-2">
+                              <label for="worktype" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>招募許可函</label>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                              <div class="row mb-2">
+                                <div class="col-12 mb-1 md-lg-0 d-flex">
+                                  <label for="applyname"
+                                    class="form-label text-nowrap me-2 fw-normal form-text-size">第</label>
+                                  <input type="text" class="form-control" id="" placeholder="" />
+                                  <span class="form-text-size mt-2 ms-2">號</span>
+                                </div>
+                                <div class="col-12">
+                                  <span class="ms-1 text-primary-deep">
+                                    (填表說明注意事項四、十)
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 持許可函 end -->
+                </div>
+                <div class="card card-form card-style">
+                  <!-- 非持許可函 start -->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">非持許可函</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-6">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4 mb-0 mb-md-2">
+                              <label for="worktype" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>具特定製程行業或屠宰場證明文件</label>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                              <div class="row mb-2">
+                                <div class="col-12 mb-1 md-lg-0 d-flex">
+                                  <label for="applyname" class="form-label text-nowrap me-2 form-text-size">第</label>
+                                  <input type="text" class="form-control" id="" placeholder="" />
+                                  <span class="form-text-size mt-2 ms-2">號</span>
+                                </div>
+                                <div class="col-12">
+                                  <span class="ms-1 text-primary-deep">
+                                    (填表說明注意事項六，以第2、4順位接續者填寫)
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 非持許可函 end -->
+                </div>
+                <div class="card card-form card-style">
+                  <!-- 國籍說明 start -->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">國籍說明</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col">
+                        <div class="alert alert-primary">
+                          「印尼009」、「馬來西亞019」、「菲律賓024」、「越南033」、「泰國030」
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 國籍說明 end -->
+                </div>
+                <div class="card card-form card-style">
+                  <!-- 因應疫情特殊事項(PCR) start -->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">
+                      因應疫情特殊事項(PCR)
+                    </h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-12">
+                        <div class="alert alert-danger">
+                          <ul>
+                            <li>
+                              依本部110年12月27日勞動發管字第11005117831號函釋，自110年12月27日起，移工已完整接種COVID-19疫苗，鬆綁雇主接續聘僱移工規定，取消新雇主接續聘僱移工（含期滿轉換），應事前安排移工至合格醫療機構進行核酸檢驗（下稱PCR）之規定；惟移工未完整接種COVID-19疫苗，新雇主仍須依本部110年7月12日函釋辦理。<br />
+                            </li>
+                            <li>
+                              依本部110年7月12日勞動發管字第1100511047號函釋，新雇主原則應於接續聘僱日(含期滿轉換)當日(含)前3日內，安排移工至合格醫療機構檢驗PCR。倘區域內醫療院所，於前開所定期間未提供檢驗PCR或已預約掛號額滿無檢驗能量之特殊情事者，始得例外延後辦理，並於接續聘僱日(含期滿轉換)當日(含)起3日內，安排移工檢驗PCR。<br />
+                            </li>
+                            <li>
+                              上述移工未完整接種COVID-19疫苗或新雇主未於前開所定期限安排移工至合格醫療機構進行PCR者，本部將不予核發聘僱許可及廢止移工名額，並以雇主違反就業服務法第57條第9款規定，移請地方政府處新臺幣6萬元至30萬元罰鍰，至所委託之私立就業服務機構則一併以違反就業服務法第40條第1項第15款規定，處新臺幣6萬元至30萬元罰鍰。<br />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <div for="reply" class="form-label text-lg-end">
+                              <span class="text-danger">* </span>請確認新雇主是否於合意接續聘僱當日或期滿轉換接續聘僱始日安排移工進行PCR
+                            </div>
+                          </div>
+                          <div class="col-md-10 my-2">
+                            <label class="rdiobox"><input name="rdio" type="radio" />
+                              <span class="form-text-size">是(移工已完整接種COVID-19疫苗或已於前開所定期限安排移工進行PCR)</span></label>
+                            <label class="rdiobox"><input name="rdio" type="radio" />
+                              <span class="form-text-size">否(移工未完整接種COVID-19疫苗或未於前開所定期限安排移工進行PCR)</span></label>
+                            <label class="rdiobox"><input name="rdio" type="radio" />
+                              <span class="form-text-size">非屬注意事項1至3所列情事</span></label>
+                            <label class="rdiobox"><input name="rdio" type="radio" />
+                              <span class="form-text-size">其他(申請期滿轉換接續聘僱時尚未屆期滿轉換接續聘僱始日)</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 因應疫情特殊事項(PCR) end -->
+                </div>
+                <div class="card card-form card-style">
+                  <!-- 委任私立就服機構資料 start-->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">
+                      委任私立就服機構資料
+                    </h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-6 mb-3 pb-2 pb-lg-0">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="reply" class="form-label text-lg-end">
+                                <span class="text-danger">* </span>文件回覆方式
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <select id="reply" name="" class="form-control form-select me-2"
+                                data-bs-placeholder="文件回覆方式">
+                                <option value="">文件回覆方式</option>
+                                <option value="">文件回覆方式</option>
+                                <option value="">文件回覆方式</option>
+                                <option value="" selected disabled>
+                                  請選擇
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2 pb-lg-0">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="private-agency" class="form-label my-2 my-lg-0 text-lg-end">
+                                <span class="text-danger">* </span>是否委任私立就服機構
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <select id="private-agency" name="" class="form-control form-select me-2"
+                                data-bs-placeholder="文件回覆方式">
+                                <option value="">文件回覆方式</option>
+                                <option value="">文件回覆方式</option>
+                                <option value="">文件回覆方式</option>
+                                <option value="" selected disabled>
+                                  請選擇
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2 pb-lg-0">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label text-lg-end">
+                                <span class="text-danger">* </span>
+                                郵寄地址類型
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="originalnum" placeholder="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2 pb-lg-0">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label my-2 my-lg-0 text-lg-end">受委任私立就服機構名稱
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="originalnum" placeholder="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label text-lg-end">許可證字號</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" disabled id="originalnum" placeholder="0000-1" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="originalnum" class="form-label text-lg-end"><span class="text-danger">*
+                                </span>負責人</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="originalnum" disabled placeholder="李四" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">專業人員證號</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="00034" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">專業人員</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="專業人員" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">聯絡電話
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="tel" class="form-control" id="givefilenum" placeholder="0000-000-000" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mb-3 pb-2">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="givefilenum" class="form-label text-lg-end">聯絡電話(分機)
+                              </label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="givefilenum" placeholder="聯絡電話(分機)" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-9">
+                            <p class="text-danger">
+                              委任私立就服機構資料連絡電話及聯絡電話(分機)僅能輸入數字，若含有文字及符號將無法送審，請點選"修改個人聯絡電話"按鈕變更預設電話。
+                            </p>
+                          </div>
+                          <div class="col-lg-3 d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary btn-style btn-phoneNum">
+                              修改個人聯絡電話
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 委任私立就服機構資料 end-->
+                </div>
+
+
+              </div>
+            </div>
+            <!-- sticky-fixed -->
+            <div class="row  btnGroup-sticky2 sticky-fixed">
+              <div class="col-12 pt-4 pb-4">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12  d-flex justify-content-center">
+                    <button class="btn  btn-primary btn-style ">資料暫存</button>
+                    <button class="btn  btn-primary  btn-result btn-style btn-style-white">資料送審</button>
+                    <button class="btn  btn-primary btn-style btn-info">列印申請書</button>
+                  </div>
+                  <div class="col-12  text-center">
+                    <p class="text-danger mt-3">登打申請如有切換頁面，建議隨時按「儲存」按鈕以避免資料遺失，未完成儲存致資料遺失影響申請案效力者，後果自行負責。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab login container closed-->
+
+          <!-- Tab profile container -->
+          <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row content">
+              <div class="col-lg-12 col-md-12">
+                <div class="card card-form card-style">
+                  <!-- 檔案上傳 start-->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">
+                      檔案上傳
+                    </h3>
+                  </div>
+                  <div class="text-danger ms-5">檔案格式：PDF(掃描畫面需清楚,檔案大小1MB以下)</div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-12 pb-lg-0">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="formFile" class="form-label text-lg-end mb-0">
+                                <span class="text-danger">* </span>申請書
+                              </label>
+                              <div class="text-primary-deep text-lg-end">印單位大小章掃描檔</div>
+                            </div>
+                            <div class="col-md-8 mt-lg-0 mt-lg-2">
+                              <div class="mb-3">
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
+                              <div class="file_download">
+                                <ul>
+                                  <li>
+                                    <span class="file_xls"><a class="file_icon" href="xxxx.xls">xls</a>2046<a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_doc"><a class="file_icon" href="xxxx.doc">doc</a> 2046<a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_pdf"><a class="file_icon" href="xxxx.pdf">pdf</a> 2046<a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_zip"><a class="file_icon" href="xxxx.zip">zip</a>2046 <a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_txt"><a class="file_icon" href="xxxx.txt">txt</a> 2046<a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_mov"><a class="file_icon" href="xxxx.mov">mov</a>2046 <a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_mp3"><a class="file_icon" href="xxxx.mp3">mp3</a> 2046<a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_jpg"><a class="file_icon" href="xxxx.jpg">jpg</a> 2046<a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_wmv"><a class="file_icon" href="xxxx.wmv">wmv</a>2046 <a
+                                        class="btn-dele">刪除</a></span>
+                                    <span class="file_mp4"><a class="file_icon" href="xxxx.mp4">mp4</a> 2046<a
+                                        class="btn-dele">刪除</a></span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4">
+                              <label for="reply" class="form-label text-lg-end mb-0">
+                                雇主負責人身份證正反面
+                              </label>
+                              <div class="text-primary-deep text-lg-end">大小章</div>
+                            </div>
+                            <div class="col-md-8 mt-lg-0 mt-lg-2">
+                              <div class="mb-3">
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="reply" class="form-label text-lg-end">
+                                入國引進許可或遞補招募許可函正本
+                              </label>
+                              <!-- <div class="text-primary-deep text-lg-end">審查費金額Amount of examination fee 100</div> -->
+                            </div>
+                            <div class="col-md-8 mt-lg-0 mt-lg-2">
+                              <div class="mb-3">
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="reply" class="form-label text-lg-end">
+                                <span class="text-danger">* </span>其它(可上傳多筆檔案)
+                              </label>
+                            </div>
+                            <div class="col-md-8 mt-lg-0 mt-lg-2">
+                              <!-- 框架預設的多筆上傳 start-->
+                              <div class="mb-3">
+                                <input id="demo" type="file" name="files"
+                                  accept=" image/jpeg, image/png, text/html, application/zip, text/css, text/js"
+                                  multiple />
+                              </div>
+                              <!-- 框架預設的多筆上傳 end-->
+                              <!-- 附上只有樣式無功能的多筆上傳 start-->
+                              <div class="">
+                                <div class="form-control  files-area"></div>
+                              </div>
+                              <!-- 附上只有樣式無功能的多筆上傳 end-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--檔案上傳 end-->
+                </div>
+                <div class="card card-form card-style">
+                  <!-- 審查費 start-->
+                  <div class="d-flex mt-4">
+                    <h3 class="title-style form-title">
+                      審查費Examination fee
+                    </h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row px-4">
+                      <div class="col-lg-12 pb-lg-0">
+                        <div class="px-2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label for="reply" class="form-label text-lg-end">
+                                <span class="text-danger">* </span>繳費方式Payment
+                              </label>
+                              <div class="text-primary-deep text-lg-end mb-0">審查費金額Amount of examination fee 100</div>
+                            </div>
+                            <div class="col-md-8 mt-lg-0 mt-lg-2">
+                              <select id="reply" name="" class="form-control form-select me-2"
+                                data-bs-placeholder="文件回覆方式">
+                                <option value="">文件回覆方式</option>
+                                <option value="">文件回覆方式</option>
+                                <option value="">文件回覆方式</option>
+                                <option value="" selected disabled>
+                                  請選擇
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- 審查費 end-->
+                </div>
+              </div>
+            </div>
+            <!-- sticky-fixed -->
+            <div class="row  btnGroup-sticky sticky-fixed">
+              <div class="col-12 pt-4 pb-5">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12  d-flex justify-content-center">
+                    <button class="btn btn-primary btn-style ">資料暫存</button>
+                  </div>
+                  <div class="col-12  text-center">
+                    <p class="text-danger mt-3">登打申請如有切換頁面，建議隨時按「儲存」按鈕以避免資料遺失，未完成儲存致資料遺失影響申請案效力者，後果自行負責。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab profile container closed-->
+        </div>
+        <!-- Tab profile container closed-->
+      </div>
+    </div>
+    <!-- main-content closed -->
+    <!-- Footer opened -->
+    <div class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="">
+              <div class="d-flex align-items-center">
+                <img src="../assets/img/brand/logo.png" class="mobile-logo logo-1" alt="logo" />
+                <h4 class="footer-title">
+                  移工網路線上申辦與 <br />
+                  查詢下載系統
+                </h4>
+              </div>
+              <p class="mt-lg-5 mb-5 mt-2 mb-lg-0 footer-text">
+                建議使用Chrome<br />
+                勞動部勞動力發展署：24219 新北市新莊區中平路439號南棟4樓<br />
+                本署服務時間：週一至週五 上午8時30分至12時30分
+                下午1時30分至5時30分<br />
+                移工申請業務服務時間：週一至週五 上午8時30分至下午5時30分
+                受理親自送件<br />
+                服務地址：100臺北市中正區中華路一段39號10樓<br />
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 phone-text">
+            <p class="font-weight-bold">
+              <img src="../assets/img/wda_img/icon-phone.svg" alt="" />
+              服務電話代表號
+            </p>
+            <p class="font-weight-bold text-monospace phone-num">1955</p>
+            <div class="d-block mb-3 w-mb-100">
+              <a href="#" class="btn btn-footer" role="button" aria-pressed="true">隱私權及安全政策</a>
+            </div>
+            <div class="d-block">
+              <a href="#" class="btn btn-footer" role="button" aria-pressed="true">個資保護專區</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer closed -->
+    </div>
+    <!-- End Page -->
+
+    <!-- Back-to-top -->
+    <a href="#top" id="back-to-top"><i class="ti-angle-double-up"></i></a>
+
+    <!-- JQuery min js -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Internal  Select2 js -->
+    <script src="../assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Ionicons js -->
+    <script src="../assets/plugins/ionicons/ionicons.js"></script>
+
+    <!-- Moment js -->
+    <script src="../assets/plugins/moment/moment.js"></script>
+
+    <!--Internal  Perfect-scrollbar js -->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!-- P-scroll js -->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- <script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script> -->
+
+    <!-- Sidebar js -->
+    <script src="../assets/plugins/side-menu/sidemenu.js"></script>
+
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+
+    <!-- Right-sidebar js -->
+    <script src="../assets/plugins/sidebar/sidebar.js"></script>
+    <script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
+
+    <!-- eva-icons js -->
+    <script src="../assets/js/eva-icons.min.js"></script>
+
+    <!-- Theme Color js -->
+    <script src="../assets/js/themecolor.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/custom.js"></script>
+
+    <!-- Form-layouts js -->
+    <script src="../assets/js/form-layouts.js"></script>
+    <!-- btn-group-sticky -->
+    <script src="../assets/js/btn-group-sticky.js"></script>
+    <!--Internal Fancy uploader js-->
+    <script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+    <script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+    <script src="../assets/plugins/fancyuploder/fancy-uploader.js"></script>
+</body>
+</html>

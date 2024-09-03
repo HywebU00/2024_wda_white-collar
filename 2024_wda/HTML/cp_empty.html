@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <meta name="description" content="Nowa -  Admin Panel HTML Dashboard Template" />
+  <meta name="author" content="Spruko Technologies Private Limited" />
+  <meta name="keywords"
+    content="sales dashboard, admin dashboard, bootstrap 4 admin template, html admin template, admin panel design, admin panel design, bootstrap 4 dashboard, admin panel template, html dashboard template, bootstrap admin panel, sales dashboard design, best sales dashboards, sales performance dashboard, html5 template, dashboard template" />
+
+  <!-- Title -->
+  <title>勞動力發展署外國人查詢下載專區系統</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.ico" type="image/x-icon" />
+
+  <!-- Icons css -->
+  <link href="../assets/css/icons.css" rel="stylesheet" />
+
+  <!--  bootstrap css-->
+  <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!--- Internal Select2 css-->
+  <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+
+  <!--  Right-sidemenu css -->
+  <link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet" />
+
+  <!-- P-scroll bar css-->
+  <link href="../assets/plugins/perfect-scrollbar/p-scrollbar.css" rel="stylesheet" />
+
+  <!--- Style css --->
+  <link href="../assets/css/style.css" rel="stylesheet" />
+  <link href="../assets/css/style-dark.css" rel="stylesheet" />
+  <link href="../assets/css/style-transparent.css" rel="stylesheet" />
+
+  <!---Skinmodes css-->
+  <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+
+  <!--- Animations css-->
+  <link href="../assets/css/animate.css" rel="stylesheet" />
+</head>
+
+<body class="horizontal ltr main-body app sidebar-mini">
+  <!-- Loader -->
+  <div id="global-loader">
+    <img src="../assets/img/loader.svg" class="loader-img" alt="Loader" />
+  </div>
+  <!-- /Loader -->
+
+  <!-- Page -->
+  <div class="page">
+    <div>
+      <!-- main-header -->
+      <div class="main-header side-header sticky nav nav-item">
+        <div class="main-container container-fluid">
+          <div class="main-header-left">
+            <div class="responsive-logo ">
+              <a href="#" class="header-logo">
+                <img src="../assets/img/brand/logo.png" class="mobile-logo logo-1" alt="logo" />
+              </a>
+              <h1>外國人查詢下載專區</h1>
+            </div>
+
+            <div class="app-sidebar__toggle" data-bs-toggle="sidebar">
+              <a class="open-toggle" href="javascript:void(0);"><i class="header-icon fe fe-align-left"></i></a>
+              <a class="close-toggle" href="javascript:void(0);"><i class="header-icon fe fe-x"></i></a>
+            </div>
+            <div class="logo-horizontal p-3">
+              <a href="index.html" class="header-logo">
+                <img src="../assets/img/brand/logo.png" class="mobile-logo logo-1" alt="logo" />
+              </a>
+            </div>
+            <h1>外國人查詢下載專區</h1>
+          </div>
+          <div class="main-header-right d-block">
+            <div class="d-flex align-items-center mt-4 mt-sm-0">
+              <div class="form-group form-language me-2">
+                <div class="row row-sm">
+                  <div class="col d-flex justify-content-center align-items-center">
+                    <label class="main-content-label mb-0">語言切換</label>
+                    <div class="row row-sm">
+                      <div class="col">
+                        <select class="form-control select2-no-search">
+                          <option selected disabled label="語言切換">語言切換</option>
+                          <option value="中文">中文</option>
+                          <option value="English">English</option>
+                          <option value="Tagalog">Tagalog</option>
+                          <option value="Indonesia">Indonesia</option>
+                          <option value="Việt Nam">Việt Nam</option>
+                          <option value="ประเทศไทย">ประเทศไทย</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn btn-primary btn-lg btn-usebook" type="button">
+                <a href="#"> 操作手冊</a>
+              </button>
+              <button class="btn btn btn-primary btn-lg btn-video" type="button">
+                <a href="#">說明影片</a>
+              </button>
+            </div>
+            <button class="navbar-toggler navresponsive-toggler d-md-none ms-auto" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
+              aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fe fe-more-vertical "></span>
+            </button>
+            <div class="mb-0 navbar navbar-expand-lg navbar-nav-right responsive-navbar navbar-dark p-0">
+              <div class="collapse navbar-collapse navbar-collapse-info" id="navbarSupportedContent-4">
+                <ul class="nav nav-item header-icons navbar-nav-right ms-auto d-block d-md-flex">
+                  <li class="d-md-none d-block py-4 text-center"><a href="#">操作手冊</a></li>
+                  <li class="d-md-none d-block mx-4 pb-3 text-center  border-bottom info-border"><a href="#">說明影片</a>
+                  </li>
+                  <li class="nav nav-item nav-link pb-0 pb-lg-3 pt-2 ps-lg-2">
+                    <ul class="user-info mt-2 mb-3 mb-lg-0 justify-content-center">
+                      <li><span class="me-2">朱Ｏ伶</span></li>
+                      <li>|<a class="ms-2 " href="">登出</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /main-header -->
+
+      <!-- main-sidebar -->
+      <div class="sticky main-header-border">
+        <aside class="app-sidebar">
+          <div class="main-sidebar-header active">
+            <a class="header-logo active" href="#">
+              <img src="../assets/img/brand/logo.png" class="main-logo desktop-logo" alt="logo" />
+              <img src="../assets/img/brand/favicon.png" class="main-logo mobile-logo" alt="logo" />
+            </a>
+          </div>
+          <div class="main-sidemenu d-flex justify-content-center">
+            <div class="slide-left disabled" id="slide-left">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#0D455C" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+              </svg>
+            </div>
+            <ul class="side-menu">
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">100_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">200_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">300_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">400_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">500_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span><i class="sub-angle fe fe-chevron-down me-4"></i></a>
+                    <ul class="sub-slide-menu">
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.1</a>
+                      </li>
+                      <li>
+                        <a class="sub-side-menu__item" href="javascript:void(0);">Level-2.2</a>
+                      </li>
+                      <li class="sub-slide2">
+                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide2" href="javascript:void(0);"><span
+                            class="sub-side-menu__label">Level-2.3</span><i
+                            class="sub-angle2 fe fe-chevron-down"></i></a>
+                        <ul class="sub-slide-menu1">
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.1</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.2</a>
+                          </li>
+                          <li>
+                            <a class="sub-slide-item2" href="javascript:void(0);">Level-2.3.3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">600_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><span
+                    class="side-menu__label">700_個人專區</span><i class="angle fe fe-chevron-right"></i></a>
+                <ul class="slide-menu">
+                  <li class="side-menu__label1">
+                    <a href="javascript:void(0);">Menu-Levels</a>
+                  </li>
+                  <li>
+                    <a class="slide-item" href="javascript:void(0);">Level-1</a>
+                  </li>
+                  <li class="sub-slide">
+                    <a class="slide-item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
+                        class="sub-side-menu__label">Level-2</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mt-4">
+                <div class="form-group form-language form-mobile-language">
+                  <div class="row row-sm">
+                    <div class="col d-flex justify-content-center align-items-center">
+                      <label class="main-content-label mb-0">語言切換</label>
+                      <div class="row row-sm">
+                        <div class="col">
+                          <select class="form-control select2-no-search">
+                            <option selected disabled label="語言切換">語言切換</option>
+                            <option value="中文">中文</option>
+                            <option value="English">English</option>
+                            <option value="Tagalog">Tagalog</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Việt Nam">Việt Nam</option>
+                            <option value="ประเทศไทย">ประเทศไทย</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="slide-right" id="slide-right">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#0D455C" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+              </svg>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+      <!-- main-sidebar -->
+    </div>
+
+    <!-- main-content -->
+    <div class="main-content app-content">
+      <!-- container -->
+
+    <div class=" container">
+      <p class="py-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita facere soluta veritatis ratione repellendus hic illum quisquam sequi, blanditiis ullam, distinctio nostrum magni? Tenetur quam molestiae sint molestias amet perspiciatis.
+      Obcaecati, consequatur modi sit recusandae exercitationem harum tenetur quos animi eaque dolorem nobis odio laudantium soluta, doloribus cupiditate nulla provident ad vel, repellendus sint. Voluptas eaque necessitatibus accusantium beatae totam.
+      Illo ipsum consequuntur maxime eos fuga obcaecati. Itaque doloremque nemo, iusto alias obcaecati quasi adipisci hic necessitatibus! Ipsum, labore nisi voluptatem eos assumenda optio nam veniam rerum ullam nesciunt! Minus!
+      Fugiat iste maxime eos molestias. Nulla delectus necessitatibus sequi facilis expedita rem, dignissimos culpa possimus amet magnam unde molestias nemo ducimus esse autem libero dolorum. Eveniet nihil qui commodi iste?
+      Obcaecati, excepturi nihil debitis similique reiciendis doloremque ab totam, tenetur aliquid in dignissimos. Voluptatibus fugit assumenda numquam itaque? Nam veritatis ipsum eos omnis dolores illum rem id molestiae neque explicabo!
+      Quae nostrum commodi consequuntur unde modi aspernatur odio officia accusantium! Quod enim iure consectetur voluptates porro labore eos unde ipsam, aliquam officia vero ipsum, corrupti doloribus amet! Quae, harum veniam.
+      Quasi doloremque alias eos! Odit ratione ex quia saepe. Reiciendis voluptatem aspernatur laborum eos nemo sint natus cupiditate corrupti vero earum totam vitae, autem doloremque suscipit hic harum! Maiores, velit.
+      Velit esse nobis animi molestias, repudiandae, perspiciatis omnis, similique rerum sunt at officia deserunt doloremque aspernatur ullam voluptatibus consectetur ex dolores? Ea provident dolor repellendus consequuntur nemo neque ad doloribus!
+      Neque dolore, accusantium ea, corrupti asperiores ab animi, soluta dolorum deleniti saepe ipsam maiores dolores temporibus. Veniam delectus accusamus, aperiam ratione esse, a suscipit ipsa quasi repudiandae minima corrupti modi?
+      Porro rerum placeat impedit quidem ullam dolor, temporibus omnis earum illum maxime ratione aliquam sequi, sed exercitationem voluptates natus eum ducimus fugiat quam cupiditate ad ea. Quae sapiente quas mollitia?
+      Praesentium dicta omnis reprehenderit itaque. Optio nesciunt similique vel ut libero laboriosam quas autem asperiores molestiae sit, repellat, sapiente illum nobis quaerat nam. Odio, consequuntur cupiditate quaerat officia aspernatur blanditiis?
+      Molestiae laboriosam obcaecati ex reiciendis ea, autem a omnis! Nisi, magni in soluta recusandae veritatis praesentium similique ipsa neque cumque aut deleniti dolore sint earum cupiditate ut qui eaque voluptatem.
+      Explicabo assumenda modi molestiae magni quis eaque, quod reiciendis porro tempore deserunt asperiores id possimus repellat. Error iste consequuntur odio accusamus perspiciatis dolorem consequatur, saepe quisquam a suscipit eligendi. Aliquid.
+      Dolor quam aut ducimus est adipisci? Praesentium, necessitatibus saepe explicabo perferendis ut maiores. Officiis laborum, ipsum quae esse rem blanditiis. Fugit neque magnam totam molestias, voluptate quo sint vel. Voluptas.
+      Saepe odio ab quasi? Delectus facere amet voluptatibus voluptate natus velit est accusamus aspernatur. Et quod error magnam maxime iure eius corrupti unde dolorum illo aut, dolore sapiente, qui debitis?
+      Id, non dolor? Eos, eius commodi rerum laudantium inventore dicta at dolore, asperiores dolor fuga iusto voluptatum quis! Quis nulla voluptate eum provident ab aut eius nesciunt iusto cum impedit.
+      Molestiae sunt saepe veritatis dicta quo, blanditiis quam nam quod eaque tempora, rerum necessitatibus aspernatur maxime. Doloremque, aperiam sit consequatur quibusdam perferendis voluptates, magnam, vitae ut hic dicta odit rerum.
+      Perferendis quos omnis adipisci iste, in veritatis, aperiam reprehenderit non laborum veniam illum magnam optio necessitatibus temporibus sed sit tempora nisi nemo vel fugit ab? Eum totam voluptatibus enim inventore!
+      Provident recusandae hic corrupti, quae aperiam voluptatem ducimus, aliquid velit nulla labore excepturi quas nam ab voluptas veniam dolor itaque iste quos exercitationem a. Quam qui architecto tempore illo facere?
+      Excepturi quaerat dignissimos, esse pariatur consequuntur veniam repudiandae ea! Molestiae provident, similique adipisci modi ut vitae iusto minus voluptate? Dolores ad exercitationem quod voluptatem molestias harum! Deserunt, voluptatem. Ratione, rem!
+      Dolorem dolores porro quis sed earum dolor placeat. Eaque fugiat, sequi magni molestiae voluptatibus sapiente ipsum, est placeat libero qui quaerat non! Dolorum nostrum sint modi, nihil deserunt voluptatem magni?
+      Veritatis amet necessitatibus error ad minus exercitationem rerum perspiciatis aperiam provident, reiciendis magni, accusamus recusandae, dolore molestias voluptates ea ipsam mollitia odio distinctio vero maiores tempore minima quae. Cumque, dolorem?
+      Fuga dicta cum voluptates saepe excepturi odit inventore ab porro voluptate, doloremque sequi cupiditate! Nemo consectetur repudiandae, illum omnis dolores, id sequi sit voluptas natus iusto cupiditate perspiciatis, rem quasi!
+      Perferendis, eum provident est harum commodi delectus quidem laborum aut ipsam, nostrum asperiores exercitationem voluptatum similique perspiciatis voluptate neque facilis suscipit amet molestias! Excepturi amet molestias veniam repudiandae ad a!
+      Hic non sunt in quod nihil facere sapiente architecto accusamus voluptatem eveniet inventore, reprehenderit id modi deleniti rerum sed fuga pariatur! Quam amet cupiditate dolore enim similique. Culpa, aut numquam.
+      Ratione, praesentium perspiciatis dolor itaque ipsum rem aspernatur soluta voluptates voluptas nisi dicta corporis earum quaerat optio minima. Illum modi veniam, perferendis minus excepturi qui. Ratione aspernatur veniam soluta modi!
+      Enim, voluptas? Eligendi perferendis rem blanditiis, consequuntur, magni adipisci reiciendis a vero repellendus totam quaerat optio, sunt similique voluptate facere. Eaque quod provident mollitia? Reiciendis odit laudantium quae nisi at.
+      Delectus reiciendis harum pariatur. Sint consectetur consequuntur aut, eaque minima dolores deleniti doloremque accusantium voluptatum recusandae delectus exercitationem, quo magnam iusto obcaecati ipsa velit quas. Inventore tempore eos sed architecto!
+      Voluptate officiis molestiae perspiciatis non sunt minima deleniti, est ex aliquam corporis consectetur explicabo velit autem quidem! Nam eos laudantium asperiores eaque quam, exercitationem aperiam, magni quo ut quia quaerat?
+      Rem exercitationem praesentium nulla, animi magni porro quos debitis ratione facilis totam labore deserunt nam perspiciatis tenetur ea corporis! Hic possimus eaque repudiandae eos in mollitia recusandae similique iste nulla.
+      Totam dolore voluptate numquam inventore, quia consequatur commodi iste dignissimos nulla quisquam est sunt praesentium voluptas, minus deleniti non sed, consequuntur officiis fugiat quis doloribus! Excepturi quibusdam voluptatum pariatur rerum!
+      Architecto magnam incidunt praesentium aspernatur doloribus, mollitia, deserunt quidem dolore omnis amet quasi quod natus sint perspiciatis porro. Sed a harum, laboriosam tenetur repellendus totam nesciunt quasi eligendi suscipit consequatur!
+      Tempora, dolorem et veritatis laborum aliquam id illum itaque eos ipsam obcaecati voluptate, voluptates eum ea amet magnam asperiores accusantium ducimus totam voluptatum officia doloremque suscipit modi aliquid? Deleniti, officia.
+      Itaque nihil molestias nam sit ea porro. Non odio aut ratione sint iusto quas, ea repellendus facilis, maiores accusantium pariatur nihil velit nobis ullam saepe exercitationem, ex voluptatum tenetur beatae?
+      Odio minus ullam necessitatibus autem pariatur deleniti sapiente totam error veritatis dolorum ut, quaerat, fugit doloremque similique aliquid! Voluptatibus obcaecati dolor exercitationem harum eos! Illum perspiciatis harum eius magnam quod.
+      Quod neque error est nobis rem. Soluta quod tempora error mollitia labore et sunt optio veritatis dignissimos quisquam nihil, dolor dolorem temporibus repellendus eius illum quam, dicta ea vel sit?
+      Voluptatum maiores placeat reiciendis recusandae officia expedita dolores, nisi impedit optio id vel consequatur? Saepe consequatur placeat ab fugiat doloribus similique quasi, autem enim sed molestias perspiciatis, nobis sapiente dolorum?
+      Deserunt eius aut quo obcaecati perspiciatis dolores, laboriosam provident, accusantium non voluptate quasi suscipit laborum nisi necessitatibus incidunt esse alias error deleniti ducimus atque at. Dolor esse iure ullam nostrum.
+      Tempora nam qui culpa voluptas voluptatum quis exercitationem amet maiores, cumque suscipit, porro repellendus eveniet aspernatur placeat incidunt enim! Atque ex adipisci iure sit nesciunt. Possimus, laboriosam dolorum? Blanditiis, voluptatibus.
+      Architecto, natus. Dolorem facilis quo veniam asperiores. Incidunt perferendis dicta, maxime, qui et non veniam iure eveniet animi architecto quam, expedita obcaecati! Nulla architecto tempora optio rem, deserunt esse voluptatibus.
+      Ut quidem est nobis saepe, id quaerat numquam tempora odit architecto mollitia nostrum dolores corporis, quia pariatur accusantium veritatis facilis quis provident culpa animi nihil porro et possimus. Quae, vitae.
+      Quos beatae, laboriosam iure tempora suscipit aperiam, cumque quae non maxime reiciendis dolorum minus enim asperiores quasi, vel id expedita vero praesentium illo ipsa? Temporibus cumque recusandae quos debitis. Obcaecati.
+      Suscipit impedit, tempora error aperiam cumque, commodi, doloremque amet perferendis repellendus illum eum a! Inventore officia sint magnam sapiente ad mollitia quo quis, dolor voluptatum harum, velit nemo soluta temporibus.
+      Accusantium facilis expedita odit itaque. Voluptatem sit illo, perferendis blanditiis modi quae eaque laboriosam eveniet a nisi sed aut fuga provident vero ipsam nobis praesentium doloremque suscipit molestiae ipsum. Porro!
+      Dolore perferendis cumque dolores officiis rerum. Facilis quidem nemo rerum totam et repellendus tenetur vel optio cupiditate sint libero nam, eveniet amet fuga voluptate illum harum rem iure eligendi maiores!
+      Laborum optio natus possimus illum molestias ut aspernatur amet alias tempora nobis odio minima molestiae veritatis, corporis, perferendis autem impedit explicabo voluptatem iure sequi itaque perspiciatis asperiores. Quaerat, maxime voluptas!
+      Exercitationem rerum aut vel sed nam cupiditate consequatur doloremque corporis voluptatibus nobis, accusamus repellendus blanditiis nulla id magni dolorum consectetur minus omnis sunt molestias quidem? Aspernatur molestias enim optio ab?
+      Reiciendis, consequatur nostrum quae alias, accusantium magni, doloremque error odit quasi debitis iste quas ex pariatur aliquam perspiciatis dicta maxime porro quibusdam ipsa animi repudiandae? Ullam aperiam ducimus dolore facilis.
+      Temporibus, minima aliquid nulla molestias alias praesentium sint dolore ea voluptatem, perspiciatis fugit inventore repudiandae in ipsa culpa quisquam. Error eos adipisci eius numquam nostrum sit aspernatur aut ab ea.
+      Ipsam, molestiae delectus error quos, nulla facere minus recusandae sint quaerat excepturi adipisci eaque vitae. Obcaecati nihil laudantium similique nisi, repellendus minus ex. Impedit voluptate culpa incidunt quibusdam quae! Nihil.
+      Eum, repudiandae exercitationem distinctio nesciunt in maiores facere ipsa sit et asperiores suscipit quia aperiam fugit ullam magni, doloribus nihil sapiente, eos ratione id modi? Adipisci quibusdam amet sint cum!
+      Nesciunt at voluptatum eius excepturi, quis aspernatur quam officiis eum reprehenderit eaque minus, consectetur pariatur tenetur sequi error autem? Praesentium odio quis fuga quam quibusdam voluptatum. Eligendi odit quae omnis.
+      Commodi quas tempora architecto, exercitationem rem eaque magnam officia, voluptatum tenetur recusandae illo eligendi sapiente unde modi eius totam reprehenderit ad maiores debitis dolore numquam. Corporis sint numquam dolore doloremque!
+      Vitae assumenda dolorum nisi ipsam ipsum, illo odit, similique architecto quam nostrum perspiciatis tenetur atque? Incidunt amet optio tempora, aperiam corporis minus quaerat fuga itaque officia. Vitae nihil vel nostrum?
+      Ullam quos distinctio voluptates temporibus reiciendis, nostrum repudiandae dignissimos laborum numquam, aperiam aspernatur. Necessitatibus magnam nesciunt aperiam vero eum, culpa, doloribus quasi corporis laboriosam quaerat commodi architecto, repellat minus quibusdam.
+      Quo officiis ratione, atque inventore quis, earum voluptate tenetur ipsam a necessitatibus dignissimos velit saepe rerum cum quisquam modi! Maiores a assumenda vero ipsum, tempore perspiciatis molestias recusandae dolorum necessitatibus!
+      Assumenda animi molestiae et error! Cum perferendis placeat voluptatem, beatae fugiat aspernatur sed, expedita voluptas porro labore ea unde, tempora id autem quia quis quos neque dicta adipisci est cumque!
+      Dolores mollitia, necessitatibus illum voluptates iusto libero vero explicabo quae quo fuga iste eos tempora omnis ipsum animi, repellat quasi voluptatibus! Veritatis, facilis delectus similique ut adipisci ratione in architecto.
+      Quam provident ut corporis repudiandae ab debitis, amet, eaque optio voluptatibus perspiciatis sapiente pariatur dolorum et voluptate quaerat. Dolorum possimus sunt similique voluptate ex necessitatibus velit architecto aspernatur iure laboriosam.
+      Dolore incidunt nihil facere deserunt sunt, error a maiores fugit perferendis recusandae ab eum aspernatur quos aliquid reiciendis reprehenderit soluta. Laudantium, libero. Pariatur quas, vero facere tempora provident consequatur porro?
+      Aliquam quisquam laboriosam incidunt, veniam fuga suscipit, voluptates veritatis tempore aperiam eum pariatur itaque, autem non obcaecati dolorum. Illum animi placeat amet accusamus sequi sint voluptatibus earum excepturi voluptates quae.
+      Dolores nemo corporis numquam modi rem illum suscipit, fugiat architecto tempora at exercitationem laudantium praesentium mollitia. Nihil accusantium consequuntur quae esse consectetur? Exercitationem, vero hic? Doloribus velit molestias saepe illum.
+      Aliquid recusandae nulla cupiditate eligendi quaerat voluptatibus ea explicabo ut saepe nobis excepturi, provident sint doloremque obcaecati rerum, aspernatur distinctio, iure aperiam impedit eos quia corporis vitae. Hic, doloribus esse.
+      Nulla, sint magni. Corporis harum, minima accusamus aperiam aliquid et tempora itaque obcaecati voluptates reiciendis laboriosam alias esse explicabo quia tempore nam deserunt dolorem. Exercitationem dolore quos numquam ipsa explicabo.
+      Facilis recusandae ullam reiciendis molestias laudantium ab voluptas minus quaerat fugiat quidem? Voluptatum voluptatem nulla delectus repellendus dicta accusantium hic rerum libero eaque deserunt? Deserunt labore ipsa vitae perferendis velit.
+      Consequuntur necessitatibus facilis eligendi iure, facere enim voluptates qui repudiandae cum fugit ullam molestias debitis architecto, minima rerum mollitia nostrum explicabo esse itaque rem? Fugiat quia similique repellendus natus eum!
+      Debitis maxime voluptatibus asperiores nostrum ullam exercitationem, blanditiis expedita nihil neque tenetur vitae? Eum dolor rerum voluptatum earum reprehenderit consectetur, tempora velit, iste quae nam hic temporibus optio sequi explicabo?
+      Ipsam, qui beatae doloribus enim consequatur, id repellat iure voluptatibus culpa eligendi autem nobis facere expedita in fuga. Possimus nobis molestiae odio recusandae minus numquam voluptas exercitationem dolores, natus et.
+      Et similique velit nobis fugiat magnam non architecto laborum aliquid id. Numquam cumque at harum quia. Quos recusandae qui numquam minus? Cumque enim voluptates nostrum modi incidunt repellat at fuga!
+      Id repellendus reiciendis nisi eius totam ab facilis obcaecati velit harum, recusandae earum labore. Placeat obcaecati doloremque tempora cumque totam est maiores ipsum recusandae eius corrupti, esse suscipit illo incidunt.
+      Consequatur rem recusandae ipsam nulla veniam ullam quod amet deleniti quo totam suscipit velit quaerat delectus maiores sit, tempore unde consectetur perferendis explicabo pariatur nobis numquam repellat quasi perspiciatis. Necessitatibus?
+      Qui, sunt! Obcaecati ea magni eum perspiciatis tempora id iusto vitae commodi culpa veniam, aliquid facere autem, nulla veritatis nemo dolores delectus nihil unde eos accusamus optio explicabo quas et?
+      Soluta, quas quis? Eum alias repellat, non possimus maiores assumenda quaerat id soluta laborum. Nesciunt, sed enim, dolore unde quae temporibus eos molestias cum cupiditate deleniti exercitationem veniam dignissimos id.
+      Perferendis architecto odit ducimus, quae facere reprehenderit officiis, excepturi et alias voluptates ipsum voluptatum eius culpa molestias voluptatibus quo ratione illum? Voluptatum, magni expedita! Enim tempore possimus corrupti aspernatur exercitationem!
+      Ipsum architecto perferendis ratione ex! Eveniet inventore repudiandae, ipsum laboriosam nulla maxime dolorem dolores magnam perferendis vel voluptatum, quam architecto delectus veritatis, ipsam velit numquam aperiam. Quo tenetur molestias repellendus!
+      Dolores iusto nisi, modi corrupti quod iure dolorem autem molestiae hic tempore et voluptatem, dicta distinctio cupiditate harum corporis necessitatibus ipsum esse vitae sint atque laboriosam delectus? Quas, culpa ducimus!
+      Tempora aperiam, deserunt ipsam molestias nam, labore soluta dolor alias, quos voluptatum laudantium hic explicabo debitis consequuntur. Voluptatem odio, tempore natus explicabo similique, nam, consequuntur magni facilis sunt id eos.
+      Velit, fugit facilis sint veniam quidem nihil cum saepe repellat inventore libero, ad, error accusamus quasi dolor excepturi obcaecati deserunt minima maxime doloribus sit beatae doloremque accusantium? Voluptatum, ex voluptatem!
+      Cupiditate deleniti corrupti, accusamus animi at debitis neque facere fugit commodi. Voluptatem praesentium inventore alias tempora, at ut aperiam! Placeat explicabo exercitationem consequatur possimus unde magni illo suscipit provident laudantium.
+      Eligendi rem quisquam quam ex similique, sapiente animi totam magnam minima ut! Ea eos aperiam facere accusantium deleniti iusto nisi, amet et deserunt doloremque dolorem asperiores quo natus laboriosam iure!
+      Tempore, magnam, rem quod impedit recusandae quaerat fugit adipisci veniam distinctio enim id sit debitis, repellendus voluptate iste. Enim sit iste aut ex, ipsa architecto debitis laboriosam nisi officiis laudantium.
+      Laboriosam dolorum nostrum expedita, tempore ipsa sit impedit numquam odio veritatis repudiandae, vitae amet. Ab vero repudiandae enim ea aspernatur debitis reiciendis velit assumenda officiis harum. Iste excepturi velit facilis.
+      Et illum quam enim, vero nihil labore illo, voluptatem laborum ipsam dolor commodi ab dicta nulla earum minima sequi, esse inventore ex blanditiis eum. Rem nam aliquam dicta quidem saepe?
+      Soluta incidunt velit iusto blanditiis saepe adipisci error reprehenderit hic quis libero! Illum in nam, eaque, dolorum ipsa rem ea et non, laudantium quo assumenda porro placeat quas adipisci reiciendis.
+      Facilis veritatis, quisquam, culpa ullam aut perspiciatis aliquid animi nihil porro totam vitae odit expedita unde magnam consequatur officia quo ea illo incidunt fugit aspernatur vero, ex qui. Distinctio, quod.
+      Reprehenderit, nihil deleniti. Tempore modi laborum, voluptatibus ducimus, deleniti ullam consequatur, aliquid hic dolorem suscipit numquam dolorum inventore veritatis nulla. Nemo, accusantium. Fugiat asperiores vel ab in exercitationem. Rem, harum?
+      Optio cupiditate quam dolorem soluta iusto facilis! Magni iure ratione consequuntur esse error molestias. Fuga quod non doloribus dolore exercitationem assumenda mollitia, adipisci facere natus earum possimus saepe eveniet inventore?
+      Explicabo ex aliquam blanditiis quam iusto provident tempora vel quasi officiis odit est fugiat minima numquam, ipsum neque alias sequi iure, iste quaerat illum! Aut cupiditate accusantium a culpa sint.
+      Modi, rem assumenda. Eaque voluptatem vel rerum repellat repellendus recusandae nihil laborum obcaecati? Eos rerum ex molestiae dolor fugit veniam deleniti tempore sapiente perspiciatis suscipit maiores facere, delectus minima quo!
+      Numquam unde hic nemo perferendis possimus voluptas accusamus. Odio dolores id dolorum autem impedit quaerat consequuntur, natus modi temporibus obcaecati quisquam. Quisquam eos voluptates distinctio. Quos placeat aliquid iusto ea!
+      Perspiciatis incidunt eius corrupti minus iure, provident ipsa, officia obcaecati odio dolore laborum! Perferendis adipisci exercitationem cupiditate dolorum aliquid eius, alias magnam iusto natus at sed tenetur molestias ipsam. Rem!
+      Delectus, autem illo aspernatur commodi animi vitae incidunt sapiente quae odio voluptate ad est cupiditate. Beatae, saepe quia accusamus, molestiae adipisci, architecto deleniti nulla facere ab quos laborum numquam veritatis!
+      Animi, ipsum molestias dolorem eveniet reiciendis molestiae voluptatum nulla sequi. Iste provident facere tempora. Debitis accusantium quasi earum sunt. Accusantium praesentium ratione itaque nobis optio cumque temporibus molestiae officia in?
+      Iusto fugiat provident illum sit dicta, alias earum pariatur similique nemo dolores soluta, reprehenderit quae explicabo. A adipisci ea, tenetur voluptate ipsum, corrupti esse quae rem, omnis suscipit repellat impedit!
+      Repellat, dolorum exercitationem similique explicabo id dolor minima mollitia officiis nulla perspiciatis, quibusdam aspernatur reiciendis sed harum nihil dignissimos deleniti saepe est vel. Illum voluptas dignissimos itaque iusto sequi earum.
+      Amet nam ad maxime sunt neque quam, autem odio dignissimos? Similique sunt deserunt voluptatem corporis cumque, possimus vel eaque exercitationem culpa, quo nesciunt adipisci dicta. Omnis dignissimos quidem reprehenderit ex.
+      Reiciendis, eaque. Omnis, eius recusandae deserunt id perspiciatis adipisci dicta cumque mollitia tempore libero beatae soluta placeat tempora nesciunt molestiae nobis corporis voluptas, natus vel fuga distinctio! Veritatis, inventore! Consectetur!
+      Itaque minus impedit doloribus dolorem necessitatibus corrupti dicta porro in mollitia amet, vel, enim magnam aliquam quasi eum quaerat id tenetur beatae. Neque, ab harum quidem id ullam doloremque exercitationem?
+      Laudantium facilis, voluptatum qui repudiandae id at animi laboriosam necessitatibus consequatur totam. Voluptates sit dolor magni eaque corporis assumenda recusandae animi eligendi facere. Rem consequatur est maxime accusamus ipsa necessitatibus.
+      Et id quis enim eaque deserunt at, doloremque tenetur animi accusamus reiciendis ut nisi exercitationem vitae odio nemo molestias itaque quod consequatur sint nostrum iusto excepturi, eligendi eos quam. Sequi!</p>
+    </div>
+
+      <!-- Container closed -->
+    </div>
+    <!-- main-content closed -->
+
+
+    <!-- Footer opened -->
+    <div class="main-footer ">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-6 col-md-12">
+            <div class="">
+              <div class="d-flex align-items-center  justify-content-lg-start justify-content-center pb-3 pb-lg-0" >
+                <img src="../assets/img/brand/logo.png" class="mobile-logo logo-1" alt="logo" />
+                <h4 class="footer-title">移工網路線上申辦與 <br>
+                  查詢下載系統</h4>
+              </div>
+              <p class="mt-lg-5 mb-5 mt-2 mb-lg-0 text-lg-start footer-text">
+                建議使用Chrome<br>
+                勞動部勞動力發展署：24219 新北市新莊區中平路439號南棟4樓<br>
+                本署服務時間：週一至週五 上午8時30分至12時30分 下午1時30分至5時30分<br>
+                移工申請業務服務時間：週一至週五 上午8時30分至下午5時30分 受理親自送件<br>
+                服務地址：100臺北市中正區中華路一段39號10樓<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 phone-text">
+            <p class="font-weight-bold "><img src="../assets/img/wda_img/icon-phone.svg" alt="">
+              服務電話代表號</p>
+            <p class="font-weight-bold text-monospace phone-num">1955</p>
+            <div class="d-block mb-3 w-mb-100">
+              <a href="#" class="btn btn-footer " role="button" aria-pressed="true">隱私權及安全政策</a>
+            </div>
+            <div class="d-block">
+              <a href="#" class="btn btn-footer" role="button" aria-pressed="true">個資保護專區</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Footer closed -->
+    </div>
+    <!-- End Page -->
+
+    <!-- Back-to-top -->
+    <a href="#top" id="back-to-top"><i class="ti-angle-double-up"></i></a>
+
+    <!-- JQuery min js -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Internal  Select2 js -->
+    <script src="../assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Ionicons js -->
+    <script src="../assets/plugins/ionicons/ionicons.js"></script>
+
+    <!-- Moment js -->
+    <script src="../assets/plugins/moment/moment.js"></script>
+
+    <!--Internal  Perfect-scrollbar js -->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!-- P-scroll js -->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- <script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script> -->
+
+    <!-- Sidebar js -->
+    <script src="../assets/plugins/side-menu/sidemenu.js"></script>
+
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+
+    <!-- Right-sidebar js -->
+    <script src="../assets/plugins/sidebar/sidebar.js"></script>
+    <script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
+
+    <!-- eva-icons js -->
+    <script src="../assets/js/eva-icons.min.js"></script>
+
+    <!-- Theme Color js -->
+    <script src="../assets/js/themecolor.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/custom.js"></script>
+
+    <!-- Form-layouts js -->
+    <script src="../assets/js/form-layouts.js"></script>
+</body>
+
+</html>
